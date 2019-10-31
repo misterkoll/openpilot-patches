@@ -1,4 +1,4 @@
-# cd /data/openpilot && curl https://github.com/misterkoll.openpilot-patches/noctua_fan_speed_patch_0.6.5.diff | git apply -v
+# cd /data/openpilot && curl https://github.com/misterkoll/openpilot-patches/noctua_fan_speed_patch_0.6.5.diff | git apply -v
 #
 # This patch sets fan speeds to max (65535) for top three temp breakpoints, suitable for EONs with Noctua fan mod.
 #
