@@ -1,4 +1,4 @@
-# cd /data/openpilot && curl https://github.com/misterkoll/openpilot-patches/noctua_fan_speed_patch_0.6.5.diff | git apply -v
+# cd /data/openpilot && curl https://raw.githubusercontent.com/misterkoll/openpilot-patches/master/noctua_fan_speed_patch_0.6.6.diff | git apply -v
 #
 # This patch sets fan speeds to max (65535) for top three temp breakpoints, suitable for EONs with Noctua fan mod.
 #
@@ -7,7 +7,7 @@
 ===================================================================
 --- a/selfdrive/thermald.py
 +++ b/selfdrive/thermald.py
-@@ -80,9 +80,9 @@
+@@ -82,9 +82,9 @@
  # temp thresholds to control fan speed - low hysteresis
  _TEMP_THRS_L = [42.5, 57.5, 72.5, 10000]
  # fan speed options
