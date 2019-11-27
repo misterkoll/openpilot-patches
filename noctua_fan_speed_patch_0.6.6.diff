@@ -18,4 +18,4 @@
 +_BAT_TEMP_THERSHOLD = 30.
 
 
-def handle_fan_eon(max_cpu_temp, bat_temp, fan_speed):
+ def handle_fan_eon(max_cpu_temp, bat_temp, fan_speed):
